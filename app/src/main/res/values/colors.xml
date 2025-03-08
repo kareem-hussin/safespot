@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="safespot_orange">#F68725</color>
+    <color name="safespot_grey">#706666</color>
+    <color name="safespot_grey2">#D9D9D9</color>
+    <color name="safespot_red">#AA3E3E</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

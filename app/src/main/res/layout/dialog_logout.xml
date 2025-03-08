@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/logoutDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/logoutDialogMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to log out?"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mplus1pmedium"
+        app:layout_constraintTop_toBottomOf="@id/logoutDialogTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Yes Button -->
+    <Button
+        android:id="@+id/logoutDialogYesButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15dp"
+        android:text="Yes"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/logoutDialogMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logoutDialogCancelButton" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/logoutDialogCancelButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:textSize="15dp"
+        android:text="No"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/safespot_orange"
+        app:layout_constraintTop_toBottomOf="@id/logoutDialogMessage"
+        app:layout_constraintStart_toEndOf="@id/logoutDialogYesButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

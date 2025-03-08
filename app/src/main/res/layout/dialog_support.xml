@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/supportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mplus1pbold"
+        android:text="Support"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/supportMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mplus1pmedium"
+        android:text="Email: \n   • kareem.hussin@one.uz.edu.ph\n   • abdiel.barro@one.uz.edu.ph\n   • jeromeandrew.tutor@one.uz.edu.ph\n\nPhone: \n      • 09938596236\n      • 09972880469\n      • 09627448151"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/supportCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="end"
+        android:text="Close"
+        android:backgroundTint="@color/safespot_orange"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<!-- dialog_about.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/safespot_grey2"
+    android:background="@drawable/rounded_corners">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About SafeSpot"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="start" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/aboutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mplus1pmedium"
+        android:text="SafeSpot aims to address certain social issues by providing parents and guardians with location updates using cheap and accessible technology. SafeSpot was created by a group of passionate IT students with a desire to leave an impact through their creations and technology."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/safespot_orange"
+        android:text="Close"
+        android:textColor="@color/white" />
+</LinearLayout>
